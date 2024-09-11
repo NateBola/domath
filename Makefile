@@ -13,11 +13,3 @@ domath.o: domath.c mymath.h
 mymath.o: mymath.c mymath.h
 	@echo "Creating the mymath library"
 	@gcc -c mymath.c -I.
-
-clean:
-	@echo "Removing everything but the source files"
-	@rm $(objects)
-
-reset:
-	@echo "Completely reseting project"
-	@rm math.exe
