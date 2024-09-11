@@ -2,6 +2,10 @@ objects = mymath.o domath.o
 
 all: mathmain
 
+.PHONY: install
+install:
+	cp math.exe $(DESTDIR)
+
 mathmain: $(objects)
 	@echo "Creating the math executable"
 	@gcc -o math.exe $(objects)
