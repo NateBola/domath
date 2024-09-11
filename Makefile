@@ -1,6 +1,6 @@
 objects = mymath.o domath.o
 
-all: mathmain clean
+all: mathmain
 
 mathmain: $(objects)
 	@echo "Creating the math executable"
